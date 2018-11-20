@@ -1,12 +1,12 @@
 import random
 
-
 def start_game():
     print("~~~~~~~~~~~~~~~~~~~~~~")
     print("Number Guessing Game!!")
     print("~~~~~~~~~~~~~~~~~~~~~~")
     print("::::::Good Luck!::::::")
     print("~~~~~~~~~~~~~~~~~~~~~~")
+
     begin = input("Are you ready to begin? [Y or N]: ")
     if begin.lower().startswith("y"):
         start = True
@@ -16,6 +16,7 @@ def start_game():
 
     guess_the_number = random.randint(1, 10)
     num_guess = 1
+
     while start:
         try:
             guess = int(input("Guess a number 1-10: "))
