@@ -7,7 +7,7 @@ def start_game():
     print("::::::Good Luck!::::::")
     print("~~~~~~~~~~~~~~~~~~~~~~")
 
-    begin = input("Are you ready to begin?\n[Y or N]: ")
+    begin = input("Are you ready to begin? [Y or N]: ")
     if begin.lower().startswith("y"):
         start = True
     if not begin.lower().startswith("y"):
